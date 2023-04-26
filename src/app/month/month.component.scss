@@ -1,0 +1,63 @@
+.month-data{
+  width: 80%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+  .month-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    background-color: aqua;
+  }
+  .month-tables{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.month-data,
+.month-name{
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+app-table{
+  width: 47.5%;
+}
+
+// ==============  FOR STYLING THE CALCULATIONS
+.month-calculations{
+  position: relative;
+  width: 15%;
+  height: 415PX;
+
+  .card{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+    text-align: center;
+  }
+
+  .current-savings{
+    top: 0px;
+  }
+  .current-expenditure{
+    top: 105px;
+    font-size: 0.9rem;
+  }
+  .current-earnings{
+    top: 210px;
+  }
+  .previous-savings{
+    top: 315px;
+  }
+
+  li:nth-child(2){
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
